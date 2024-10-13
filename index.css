@@ -3,7 +3,6 @@
 }
 
 body {
-    /* background: #575757; */
     background: #1e1d1d;
     color: #ffffff;
 }
@@ -94,11 +93,3 @@ nav ul li a:hover::after {
     border: none;
     border-radius: 40px;
 }
-/* .items>[data-type] {
-    display: none;
-} 
-input[name=a]:checked~.items div[data-type=a],
-input[name=b]:checked~.items div[data-type=b],
-input[name=c]:checked~.items div[data-type=c] {
-display: block;
-} */
