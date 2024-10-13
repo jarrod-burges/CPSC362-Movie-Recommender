@@ -21,7 +21,11 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+nav img {
+    position: absolute;
+}
 nav p {
+    padding-left: 110px;
     color: #fff;
     font-size: 50px;
 }
@@ -36,6 +40,19 @@ nav ul li a {
     font-size: 18px;
     position: relative;
 }
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(195, 14, 14);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
 
 .header-text {
     margin-top: 20%;
@@ -48,15 +65,35 @@ nav ul li a {
 }
 
 #filtering {
-    width: 100%;
-    height: 100vh;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    margin: 100px 10%;
+    border-radius: 10px;
+    align-items: center;
 }
-.filter-prompt p {
-    padding: 10px 10%;
-    font-size: 25px;
+.filter-group {
+    margin: 25px 25px;
+}
+.filter-group img {
+    position: absolute;
+    left: 65%;
+}
+.filter-group p {
+    margin-top: 35px;
+    font-size: 30px;
     text-align: center;
 }
-
+.filter-group input[type=text] {
+    padding: 5px;
+    margin: auto;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 40px;
+}
 /* .items>[data-type] {
     display: none;
 } 
