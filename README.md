@@ -13,6 +13,6 @@ This special website can generate a list of movies, according to a user’s sele
 2) Questions
 3) Display Results
 
-Languages that were implemented in the programming of this website includes HTML and CSS for the front-end, while it uses SQL and PHP for the back-end.
+Languages that were implemented in the programming of this website includes HTML, CSS, and JavaScript for the front-end, while it uses SQL and PHP for the back-end.
 
 The dataset was obtained from IMDB.
