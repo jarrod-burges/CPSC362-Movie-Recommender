@@ -91,7 +91,7 @@
         $query .= " AND genres LIKE '%" . SQLite3::escapeString($genre) . "%'";
     }
     if (!empty($recency)) {
-        $query .= " AND endYear >= " . intval($recency);
+        $query .= " AND endYear = " . intval($recency);
     }
     if (!empty($rating)) {
         $query .= " AND rating >= " . floatval($rating);
@@ -109,7 +109,7 @@
         $movieId = urlencode($row['tconst']); // Assuming 'tconst' is the unique identifier for each movie
         $year = htmlspecialchars($row['startYear']);
         $genres = htmlspecialchars($row['genres']);
-        echo "<tr><td><a href='movieDetails.php?tconst=$movieId'>$movieTitle</a></td><td>$year</td><td>$genres</td></tr>";
+        echo "<tr><td><a href='movieDetails.php?tconst=$movieId'>$movieTitle</a></td><td>$year></td><td>$genres</td></tr>";
     }
 
     echo '</table>';
@@ -130,6 +130,5 @@
     $db->close();
     ?>
 </div>
-
 </body>
 </html>
