@@ -28,21 +28,23 @@
     <!-- Filtering Section -->
     <div id="filtering">
         <div class="container">
-            <div class="filter-group">
-                <img src="images/caitlin_favor_project_logo_w_chair_glasses.png">
-                <p>What genre are you looking for?</p>
-                <input type="text" placeholder="Search...">
-            </div>
-            <div class="filter-group">
-                <p>Any preference on recency?</p>
-                <input type="text" placeholder="Search...">
-            </div>
-            <div class="filter-group">
-                <p>What rating are you looking for?</p>
-                <input type="text" placeholder="Search...">
-            </div>
+            <form action="viewData.php" method="GET">
+                <div class="filter-group">
+                    <img src="images/caitlin_favor_project_logo_w_chair_glasses.png">
+                    <p>What genre are you looking for?</p>
+                    <input type="text" name="genre" placeholder="Enter genre...">
+                </div>
+                <div class="filter-group">
+                    <p>Any preference on recency?</p>
+                    <input type="text" name="recency" placeholder="Enter year or range...">
+                </div>
+                <div class="filter-group">
+                    <p>What rating are you looking for?</p>
+                    <input type="text" name="rating" placeholder="Enter minimum rating...">
+                </div>
+                <button type="submit">Get Recommendations</button>
+            </form>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
