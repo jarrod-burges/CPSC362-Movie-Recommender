@@ -134,17 +134,6 @@
                 $character = $cast['characters'] ? ' as ' . htmlspecialchars($cast['characters']) : '';
                 echo '<li><strong>' . htmlspecialchars($cast['category']) . ':</strong> ' . htmlspecialchars($cast['primaryName']) . $character . '</li>';
             }
-            echo '</ul>';
-
-            // Query for alternate titles
-            echo '<div class="section-title">Alternate Titles</div>';
-            echo '<ul class="alternate-titles">';
-            $akasQuery = "SELECT title, region, language FROM titleAkas WHERE titleId = '" . SQLite3::escapeString($movieId) . "' AND isOriginalTitle = 0";
-            $akasResult = $db->query($akasQuery);
-            while ($aka = $akasResult->fetchArray(SQLITE3_ASSOC)) {
-                echo '<li>' . htmlspecialchars($aka['title']) . ' (' . htmlspecialchars($aka['region']) . ', ' . htmlspecialchars($aka['language']) . ')</li>';
-            }
-            echo '</ul>';
         } else {
             echo '<p>Movie not found.</p>';
         }
