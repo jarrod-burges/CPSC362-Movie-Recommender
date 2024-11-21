@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/caitlin_project_logo_final.png">
-            <p>Moo...vies!</p>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/caitlin_project_logo_final.png">
+                <p>
+                    Moo...vies!
+                </p>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
             </ul>
-        </nav>
-        <div class="header-text">
-            <p>Moo...vies! Generator</p>
-            <h1>Can't find any good movies? Don't know what to watch?<br>Then answer these questions!</h1>
+            </nav>
+            <div class="header-text">
+                <p>Moo...vies! Generator</p>
+                <h1>Can't find any good movies? Don't know what to watch?<br>Then answer these questions!</h1>
+            </div>
         </div>
     </div>
-</div>
-<br>
-<!-- Filtering Section -->
-<div id="filtering">
-    <div class="container">
-        <form action="viewData.php" method="GET">
+    <br>
+    <!-- Filtering Section -->
+    <div id="filtering">
+        <div class="container">
             <div class="filter-group">
                 <img src="images/caitlin_favor_project_logo_w_chair_glasses.png">
                 <p>What genre are you looking for?</p>
-                <input type="text" name="genre" placeholder="Enter genre...">
+                <input type="text" placeholder="Search...">
             </div>
             <div class="filter-group">
                 <p>Any preference on recency?</p>
-                <input type="text" name="recency" placeholder="Enter year or range...">
+                <input type="text" placeholder="Search...">
             </div>
             <div class="filter-group">
                 <p>What rating are you looking for?</p>
-                <input type="text" name="rating" placeholder="Enter minimum rating...">
+                <input type="text" placeholder="Search...">
             </div>
-            <button type="submit">Get Recommendations</button>
-        </form>
+        </div>
     </div>
-</div>
+    <script src="script.js"></script>
 </body>
 </html>
